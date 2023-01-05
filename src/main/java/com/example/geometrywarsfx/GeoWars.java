@@ -58,7 +58,25 @@ public class GeoWars extends GameApplication {
             });
         });
 
+    }
 
+    @Override
+    protected void onUpdate(double tpf) {
+        for(Entity entity: FXGL.getGameWorld().getEntities()) {
+            worldBoundCorrection(entity);
+        }
+    }
 
+    private void worldBoundCorrection(Entity entity) {
+
+        if(entity.getX() > FXGL.getAppWidth()) {
+            entity.setPosition(-29, entity.getY());
+        } else if(entity.getX() < -30) {
+            entity.setPosition(FXGL.getAppWidth(), entity.getY());
+        } else if(entity.getY() > FXGL.getAppHeight()) {
+            entity.setPosition(entity.getX(), -29);
+        } else if(entity.getY() < -30) {
+            entity.setPosition(entity.getX(), FXGL.getAppHeight());
+        }
     }
 }
