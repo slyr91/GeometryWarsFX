@@ -8,6 +8,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.util.Duration;
 
+import java.util.Random;
+
 public class GeoWars extends GameApplication {
 
     private final GeoWarsFactory geoWarsFactory = new GeoWarsFactory();
@@ -42,7 +44,18 @@ public class GeoWars extends GameApplication {
 
         player = FXGL.spawn("player", FXGL.getAppWidth() / 2 - 15, FXGL.getAppWidth() / 2 - 15);
 
-        FXGL.run(() -> FXGL.spawn("enemy"), Duration.seconds(1.0));
+        FXGL.run(() -> {
+            FXGL.spawn("enemy");
+
+            int randomEnemy = new Random().nextInt(10);
+
+            switch (randomEnemy) {
+                case 1:
+                case 2:
+                case 3:
+                    FXGL.spawn("sneakySquare", FXGL.getAppWidth() - 2, player.getY());
+            }
+        }, Duration.seconds(1.0));
     }
 
     @Override

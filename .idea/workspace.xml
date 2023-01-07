@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af172de1-c5fe-4d0c-a500-6c294727b71c" name="Changes" comment="Initial Commit With Base GeoWars Game Working&#10;Input is configured, game logic is configured, and physics is configured.">
+    <list default="true" id="af172de1-c5fe-4d0c-a500-6c294727b71c" name="Changes" comment="World Wrapping&#10;Entities will now wrap around to the other side of the game world when they pass over the bounds of the screen.">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/geometrywarsfx/GeoWars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/geometrywarsfx/GeoWars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/geometrywarsfx/GeoWarsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/geometrywarsfx/GeoWarsFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +70,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.geometrywarsfx" />
@@ -123,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672892972485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="World Wrapping&#10;Entities will now wrap around to the other side of the game world when they pass over the bounds of the screen.">
+      <created>1672901475393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672901475393</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit With Base GeoWars Game Working&#10;Input is configured, game logic is configured, and physics is configured." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit With Base GeoWars Game Working&#10;Input is configured, game logic is configured, and physics is configured." />
+    <MESSAGE value="World Wrapping&#10;Entities will now wrap around to the other side of the game world when they pass over the bounds of the screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="World Wrapping&#10;Entities will now wrap around to the other side of the game world when they pass over the bounds of the screen." />
   </component>
 </project>
